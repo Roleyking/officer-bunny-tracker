@@ -38,9 +38,11 @@
 
 ## ✨ 核心亮点 / Key Features
 
-### 1. 🎮 沉浸式 Zootopia 游戏化 / Immersive Zootopia Gamification
+### 📦 V1 基础功能 / V1 Core Features
 
-#### 📊 当日打卡状态图（4阶段）/ Daily Check-in Status Image (4 Stages)
+#### 1. 🎮 沉浸式 Zootopia 游戏化 / Immersive Zootopia Gamification
+
+##### 📊 当日打卡状态图（4阶段）/ Daily Check-in Status Image (4 Stages)
 
 根据当日任务完成情况自动切换：
 
@@ -51,7 +53,7 @@
 | 50-99% | rabbit-tracker-light (努力冲刺的朱迪 / Trying Hard Judy) |
 | 100% | rabbit-tracker-happy (荣耀时刻的朱迪 / Victory Judy) |
 
-#### 🗣️ 局长评语卡片 / Chief Bogo's Comment Card
+##### 🗣️ 局长评语卡片 / Chief Bogo's Comment Card
 
 根据**当月完成度**（完美天数 ÷ 已过去天数）触发：
 
@@ -63,13 +65,13 @@
 
 - 警情通报系统：点击顶部评价框触发疯狂动物城式反馈，强化正向激励 / Police Report System: Click top rating badge for Zootopia-flavored motivational feedback
 
-### 2. 🔒 隐私优先的本地优先架构 / Privacy-First, Local-First Architecture
+#### 2. 🔒 隐私优先的本地优先架构 / Privacy-First, Local-First Architecture
 
 - ✅ 纯前端实现，所有数据存储于 IndexedDB，无需注册/登录，零服务器依赖 / Pure frontend with IndexedDB storage — no registration, no login, zero server dependency
 - ✅ Service Worker 离线缓存，断网环境下完整可用 / Service Worker offline caching — fully functional without network
 - ✅ Chrome 无痕模式 Lighthouse 评分 100 分 / Chrome Incognito Lighthouse Score: 100/100
 
-### 3. 📅 灵活而严格的时间管理 / Flexible Yet Strict Time Management
+#### 3. 📅 灵活而严格的时间管理 / Flexible Yet Strict Time Management
 
 | 功能 / Feature | 说明 / Description |
 |:---|:---|
@@ -77,23 +79,59 @@
 | 未来规划 / Future Planning | 可提前规划任务，但禁止提前打卡（防作弊设计）/ Plan ahead, but early check-in is blocked (anti-cheating design) |
 | 完美日追踪 / Perfect Day Streak | 顶部进度条实时显示连续完美天数 / Real-time progress bar tracking consecutive perfect days |
 
-### 4. 🎨 深度个性化定制 / Deep Personalization
+#### 4. 🎨 深度个性化定制 / Deep Personalization
 
 - 任务模板系统：预设常用任务，一键快速打卡 / Task Templates: Preset common tasks for one-tap check-in
 - 全视觉自定义：可替换所有状态图片、背景壁纸、App 外壳背景 / Full Visual Customization: Replace all status images, wallpapers, and app backgrounds
 - 双语支持：一键切换中英文界面 / Bilingual Support: One-click EN/CN switch
 
-### 5. 📊 数据主权与可移植性 / Data Sovereignty & Portability
+#### 5. 📊 数据主权与可移植性 / Data Sovereignty & Portability
 
 - 一键导出 CSV 格式打卡数据，支持 Excel/Numbers 分析 / One-click CSV export for Excel/Numbers analysis
 - 数据完全本地化，随时备份迁移 / Fully local data — backup and migrate anytime
 
-### 6. 🎨 零版权风险的完全自定义系统 / Zero Copyright Risk, Fully Customizable
+#### 6. 🎨 零版权风险的完全自定义系统 / Zero Copyright Risk, Fully Customizable
 
 - AI 生成默认素材：所有 Zootopia 风格图片均为 AI 原创生成，无盗图风险 / AI-Generated Default Assets: All Zootopia-style images are AI-original, zero infringement risk
 - 100% 可替换架构：从状态图标到背景壁纸，每个像素都可由用户自定义 / 100% Replaceable Architecture: Every pixel from icons to wallpapers can be customized
 
 ---
+
+### 🚀 V2 新增功能 / V2 New Features
+
+V2 版本基于 **Vite 8** 完全重构，在保持 V1 所有功能的基础上，带来以下升级：
+
+> **V2 亮点速览 / V2 at a glance**: 暗黑模式 · 月度曲线 · 徽章系统 · 分享卡片 · 性能翻倍
+
+#### 🎨 暗黑模式与统一视觉 / Dark Mode & Unified Visuals
+- 🌙 暗黑模式支持，桌面/移动端视觉统一
+- 细腻的主题切换动画和过渡效果
+
+#### 📈 月度完美曲线图表 / Monthly Perfect Curve (Chart.js)
+- 使用 **Chart.js** 绘制月度完美天数趋势图
+- 直观展示自律表现的起伏变化
+
+#### 🛡 成长徽章系统 / Growth Badge System (4 Tiers)
+- 4 档徽章等级：见习警员 → 正式警员 → 高级警员 → 传奇警长
+- 支持自定义徽章图片裁剪，个性化展示
+- 默认徽章图已优化为 **WebP** 格式，加载更轻量
+- 使用 **Sharp** 进行服务端图片优化处理
+
+#### 🧾 分享卡片导出 / Share Card Export
+- 使用 **html2canvas** 生成精美分享卡片
+- 卡片包含：局长评语 + 徽章 + 月度曲线 + 励志格言
+- 一键保存图片，方便社交媒体分享
+
+#### ⚡ 性能优化 / Performance Optimizations
+- **Vite 8** 带来的构建速度提升
+- Chart.js 与 html2canvas 延迟加载，首屏更轻更快
+- Lighthouse 桌面/移动端双 100 分保持
+
+---
+
+---
+
+
 
 ## 🚀 快速开始 / Quick Start
 
@@ -102,8 +140,8 @@
 
 ### 本地运行 / Local Development
 
-> ⚠️ PWA 项目需要通过 HTTP/HTTPS 服务器运行，不能直接用浏览器打开 index.html（Service Worker 需要服务器环境）/
-> ⚠️ PWA requires HTTP/HTTPS server — opening index.html directly won't work (Service Worker needs server environment)
+> ⚠️ PWA 项目需要通过 HTTP/HTTPS 服务器运行（Service Worker 需要服务器环境）/
+> ⚠️ PWA requires HTTP/HTTPS server (Service Worker needs server environment)
 
 ```bash
 # 克隆仓库 / Clone repo
@@ -112,17 +150,18 @@ git clone https://github.com/Roleyking/officer-bunny-tracker.git
 # 进入目录 / Enter directory
 cd officer-bunny-tracker
 
-# 方式一：使用 Python 内置服务器 / Using Python's built-in server
-python -m http.server 8080
+# 安装依赖 / Install dependencies
+npm install
 
-# 方式二：使用 npx / Or using npx
-npx serve .
+# 开发模式 / Dev server
+npm run dev
 
-# 方式三：使用 VS Code Live Server 插件 / VS Code Live Server extension
-# 右键 index.html -> Open with Live Server
+# 构建 + 预览 / Build + preview
+npm run build
+npm run preview
 
-# 然后访问 / Then visit
-http://localhost:8080
+# 访问 / Visit
+http://localhost:5173
 ```
 
 ### PWA 安装 / PWA Installation
@@ -137,9 +176,12 @@ http://localhost:8080
 
 | 技术 / Technology | 用途 / Purpose |
 |:---|:---|
-| Vue 3 (CDN) | 前端框架 / Frontend framework |
+| Vue 3 + **Vite 8** | 前端框架 / Frontend framework |
 | IndexedDB | 本地数据存储 / Local data storage |
-| Service Worker | 离线缓存 / Offline caching |
+| vite-plugin-pwa (Workbox) | 离线缓存 / Offline caching |
+| **Chart.js** | 月度曲线图 / Monthly charts |
+| **html2canvas** | 分享卡片导出 / Share card export |
+| **Sharp** | 图片处理优化 / Image optimization |
 | PWA | 渐进式 Web 应用 / Progressive Web App |
 
 ---
@@ -162,8 +204,11 @@ http://localhost:8080
 - [x] PWA 离线支持 / PWA offline support
 - [x] 数据导出 CSV / CSV data export
 - [x] 双语支持 / Bilingual support
-- [ ] 暗黑模式 / Dark mode
-- [ ] 周/月统计图表 / Weekly/monthly statistics
+- [x] 暗黑模式 / Dark mode
+- [x] 月度完美曲线 / Monthly perfect curve (Chart.js)
+- [x] 成长徽章系统 / Growth badge system (4 tiers)
+- [x] 分享卡片导出 / Share card export
+- [ ] AI 助手集成 / AI assistant integration
 - [ ] 可选云同步（端到端加密）/ Optional cloud sync (E2E encrypted)
 
 ---

@@ -1,0 +1,63 @@
+# 依赖目录 / Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# 构建输出 / Build outputs
+dist/
+dist-ssr/
+*.local
+
+# 缓存 / Cache
+.vite/
+.cache/
+*.tsbuildinfo
+
+# 备份文件 / Backups
+backups/
+*.bak
+*.backup
+
+# 日志 / Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# 测试报告 / Test reports
+coverage/
+.nyc_output/
+lighthouse-*.json
+
+# 环境变量 / Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE / Editors
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS / System files
+.DS_Store
+Thumbs.db
+*.pem
+
+# 大媒体文件 / Large media files（可选保留截图，删除视频）
+docs/assets/*.webm
+docs/assets/*.mp4
+docs/assets/*.mov
+
+# 临时文件 / Temporary files
+*.tmp
+*.temp
+.~lock.*#
