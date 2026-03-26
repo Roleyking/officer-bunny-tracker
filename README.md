@@ -28,11 +28,25 @@
 ## 📸 界面预览 / Screenshots
 
 <p align="center">
-  <img src="./docs/assets/officerbunnytracker-PC.png" alt="PC View" width="280">
-  <img src="./docs/assets/officerbunnytracker-mobile.jpg" alt="Mobile View" width="280">
+  <img src="./docs/assets/officerbunnytracker-PC-V2.png" alt="PC View" width="400">
+  <img src="./docs/assets/officerbunnytracker-mobile-V2.jpg" alt="Mobile View" width="140">
 </p>
 
 🎬 [演示视频 / Demo Video](./docs/assets/officerbunnytracker-manual.webm)
+
+### 🛡️ V2 特色功能 / V2 Special Features
+
+<p align="center">
+  <img src="./docs/assets/setting.png" alt="Settings" width="180">
+  <img src="./docs/assets/sharecard.png" alt="Share Card" width="180">
+  <img src="./docs/assets/lighthouse-score-V2.png" alt="Lighthouse Score" width="180">
+</p>
+
+| 设置页面 / Settings | 分享卡片 / Share Card | 性能评分 / Performance |
+|:---:|:---:|:---:|
+| 暗黑模式切换 / Dark mode toggle | 一键生成精美分享卡片 / One-click share card | Lighthouse 100分 / Lighthouse 100 |
+| 徽章自定义 / Badge customization | 包含局长评语+徽章+曲线 / Chief comment + badge + chart | 桌面移动端双百 / Desktop & Mobile 100 |
+| 图片个性化 / Image customization | 社交媒体一键分享 / Social media ready | Vite 8 性能优化 / Vite 8 optimized |
 
 ---
 
